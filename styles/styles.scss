@@ -1,0 +1,23 @@
+* {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+header {
+    background: rgb(255, 32, 32);
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        flex-grow: 50;
+    }
+
+    .cart {
+        flex-grow: 1;
+    }
+}
