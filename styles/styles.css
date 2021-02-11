@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 * {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 header {
@@ -17,6 +19,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 75px;
 }
 
 header .logo {
@@ -31,9 +34,106 @@ header .logo {
           flex-grow: 50;
 }
 
+header .logo img {
+  width: 50px;
+}
+
 header .cart {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  color: #fff;
+}
+
+.cards-div {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.cards-div h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards-div .card {
+  height: 400px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #bebebe;
+  border-radius: 5px;
+  position: relative;
+}
+
+.cards-div .card .description {
+  color: gray;
+}
+
+.cards-div .card img {
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 270px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.cards-div .card .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-self: end;
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+}
+
+.cards-div .card .button-wrapper .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 9;
+      -ms-flex-positive: 9;
+          flex-grow: 9;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards-div .card .button-wrapper .buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=styles.css.map */

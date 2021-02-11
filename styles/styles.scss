@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 * {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
+    font-family: 'Raleway', sans-serif
 }
 
 header {
@@ -10,14 +13,84 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 75px;
 
     .logo {
         display: flex;
         justify-content: center;
         flex-grow: 50;
+
+        img {
+            width: 50px;
+        }
     }
 
     .cart {
         flex-grow: 1;
+        color: #fff;
+    }
+}
+
+.cards-div {
+    padding-right: 5px;
+    padding-left: 5px;
+
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        height: 400px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(190, 190, 190);
+        border-radius: 5px;
+        position: relative;
+
+        .description {
+            color: gray;
+        }
+
+        img {
+            height: auto;
+            object-fit: contain;
+            max-width: 270px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .button-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-self: end;
+            width: 300px;
+            height: 50px;
+            position: absolute;
+            bottom: 0;
+
+            .details {
+                display: flex;
+                flex-grow: 9;
+                background-color: red;
+                color: white;
+                border: none;
+                border-radius: 3px;
+                align-items: center;
+            }
+
+            .buy {
+                display: flex;
+                flex-grow: 1;
+                background-color: red;
+                color: white;
+                border: none;
+                border-radius: 3px;
+                align-items: center;
+            }
+
+        }
     }
 }
