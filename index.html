@@ -4,7 +4,7 @@
         <title>Apple store</title>
         <link rel="stylesheet" href="styles/styles.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <script src="index.js"></script>
+        <script src="index.js" defer></script>
     </head>
     <body>
         <header>
@@ -18,7 +18,7 @@
         <main>
             <div class="new-cards cards-div">
                 <h1>Our new trees!</h1>
-                <div class="card-wrapper" id="new-cards">
+                <!-- <div class="card-wrapper" id="new-cards">
                     <div class="card">
                         <img src="assets/apples/fuji.jpg" alt="Fuji">
                         <h3>Fuji</h3>
@@ -28,11 +28,13 @@
                             <button class="buy">Buy!</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
+                <div class="loader">Loading...</div>
             </div>
             <div class="best-cards cards-div">
                 <h1>The bestsellers!</h1>
                 <div class="card-wrapper" id="best-cards"></div>
+                <div class="loader">Loading...</div>
             </div>
         </main>
     </body>

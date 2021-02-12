@@ -22,8 +22,4 @@ MongoClient.connect("mongodb://localhost:27017", function (err, client) {
 
 console.log(apples);
 
-// router.get('/', function (req, res, next) {
-//     res.json();
-// });
-
 module.exports = router;
